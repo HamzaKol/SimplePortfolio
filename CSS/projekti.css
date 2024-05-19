@@ -1,0 +1,67 @@
+.horizontalni-content {
+    display: flex;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    background-color: #12486B;
+    padding: 1em;
+    margin: 1em auto;
+    width: 80%;
+}
+
+.tekst{
+    align-self: center;
+}
+
+.gif img{
+    height: auto;
+    width: 50vw;
+}
+#gif5 img{
+    height: auto;
+    width: 30vw;
+}
+.projekath1{
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #12486B;
+    width: 80%;
+}
+.projekath1 h1{
+    display: block;
+        margin-top: 2vh ;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+}
+.projekath1 p{
+    display: block;
+        margin-top: 2vh ;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+}
+@media screen and (max-width: 800px) {
+    .horizontalni-content {
+        display: block;
+        grid-template-columns: 1fr 1fr ;
+        gap: 1em;
+        background-color: #12486B;
+        padding: 1em;
+        margin: 1em auto;
+        width: 80%;
+    }
+    .gif img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    width: 90%;
+    }
+}
+
+.tekst ul{
+    color: #F5FCCD;
+}
+.link1:hover{
+    background-color: #419197;
+
+}

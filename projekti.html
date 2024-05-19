@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="./Slike/ikonica.png">
+	<link rel="stylesheet" href="./CSS/projekti.css" type="text/css">
+	<link rel="stylesheet" href="./CSS/header.css" type="text/css">
+	<title>Projekti</title>
+</head>
+<body>
+	<header id="Header">
+		<div class="slika1">
+			<a href="./index.html"><img src="./Slike/Header_Slika.png" alt="header slika"></a>
+			
+		</div>
+		
+		<nav id="Navigacija-header">
+			<ul class="nav-linkovi">
+				<li><a href="./index.html">Početna</a></li>
+				<li><a href="./projekti.html">Projekti</a></li>
+				<li><a href="./galerija1.html">Galerija 1</a></li>
+				<li><a href="./galerija2.html">Galerija 2</a></li>
+				<li><a href="./blog.html">Blog <img src="./Slike/blog.png" class="ikonica"></a></a></li>
+				<form class="pretraga">
+                    	<label for="search">Pretraga</label>
+                    	<input id="search" type="text" name="naziv" placeholder="Upišite šta želite tražiti..." autocomplete="off">
+                    	<img src="./Slike/lupa.png" class="ikonica">
+				</form>
+			</ul>
+		</nav>
+	
+	</header>	
+
+
+	<main>
+
+
+		<section id="horizontalni-content">
+			<div class="projekath1">
+				<h1 id="projekath1"><a class="link1" target="_blank" href="https://github.com/HamzaKol/sah">Projekat1 : Klon Šaha</a></h1>
+				<p>Potpuno funkcionalan klon šaha sa svim potrebnim pravilima. Napravljen u pythonu sa pygame modulom. Neka od pravila uključuju: </p>
+			</div>
+			<div class="horizontalni-content">
+				<div class="gif" id="gif1">
+					<img src="./Slike/check.gif" alt="gif šaha u šahu">
+				</div>
+				<div class="tekst">
+					<h1>Šah</h1>
+					<p>Šah je stanje igre kad je kralj napadnut. Kada je kralj u šahu mora izaći iz šaha pomijeranjem, blokiranjem ili osvajanjem figure koja ga je dovela u šah. U ovom projektu šah radi na način da osobi čiji je kralj u šahu ne dopušta ni jedan drugi potez osim da izađe iz šaha što prije može.</p>
+				</div>
+			</div>
+			<div class="horizontalni-content">
+				<div class="tekst">
+					<h1>Šah-Mat</h1>
+					<p>Šah-Mat je stanje igre kad je kralj u šahu i nema način da izađe iz šaha. U ovom projektu šah-mat radi na način da se ni jedna figura ne može pomijeriti više i u konzoli ispiše da je šah-mat.</p>
+
+				</div>
+				<div class="gif" id="gif2">
+					<img src="./Slike/checkmate.gif" alt="gif šah-mata u šahu">
+				</div>
+			</div>
+
+			<div class="horizontalni-content">
+				<div class="gif" id="gif3">
+					<img src="./Slike/promotion.gif" alt="gif promocije u šahu">
+				</div>
+				<div class="tekst">
+					<h1>Promocija</h1>
+					<p>Promocija je stanje igre kada pijun dođe do kraja šahovske table i može postati bilo koja druga figura osim kralja. U ovom projektu promocija radi na način da sve postane plavo i pojave se 4 figure, 4 opcije od kojih korisnik bira jednu i pijun u tom slučaju postaje ta nova figura.</p>
+				</div>
+			</div>
+			<div class="horizontalni-content">
+				<div class="tekst">
+					<h1><a class="link1" href="https://en.wikipedia.org/wiki/En_passant" target="_blank">En Passant</a></h1>
+					<p>En Passant je poseban potez koji je moguć u samo jednom slučaju, kada se igrač 1 svojim pijunom pomjeri iz startne pozicije pijuna 2 koraka naprijed i završi sa lijeve ili desne strane pijuna igrača 2. U tom slučaju igrač 2 ima samo taj potez da osvoji tog pijuna na isti način kao da je samo 1 korak naprijed pomjeren pijun. Ukoliko ovo ne uradi igrač 2 u tačno tom potezu igra se nastavlja i nema pravo tog pijuna da uzme na taj specifičan način. Možete naći bolje objašnjenje pravila klikom na "En Passant" title.</p>
+				</div>
+				<div class="gif" id="gif4">
+					<img src="./Slike/enpassant.gif" alt="gif enpassant-a u šahu">
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section id="horizontalni-content2">
+			<div class="projekath1">
+				<h1 id="projekath2"><a class="link1" target="_blank" href="https://github.com/HamzaKol/Binary-Search-Tree">Projekat2 : Binarno Stablo Pretrage</a></h1>
+				<p>Ideja je da u stablo osim vrijednosti pamtimo i prioritet. Taj prioritet će nasumično biti izabran
+				i brojevi sa najvećim prioritetima trebaju biti visočije u stablu. To ćemo postići određenim
+				rotacijama u stablu kada nam nije zadovoljen heap za prioritete. Ovo sve radimo da bi
+				balansiranost stabla održali što bliže logn-u. Po teoriji vjerovatnoće stablo će biti obično visine
+				oko logn.</p>
+			</div>
+			<div class="horizontalni-content">
+				<div class="gif" id="gif5">
+					<img src="./Slike/BST.png" alt="slika outputa binarnog stabla pretrage">
+				</div>
+				<div class="tekst">
+					<h1>Funkcionalnosti</h1>
+					<p>Funkcionalnosti uključuju :</p>
+					<ul>
+						<li>Pretraga – Vraća true ili false u zavisnosti da li je broj u stablu</li>
+						<li>Umetanje – Ubacuje broj u stablo i balansira ako je potrebno</li>
+						<li>Brisanje – Briše broj iz stabla i balansira ako je potrebno</li>
+						<li>Razdvajanje – Prima broj i vraća dva stabla, jedan gdje su svi elementi manji od broja, a drugi
+						gdje su svi elementi veći od stabla</li>
+						<li>Spajanje – Prima dva stabla gdje su svi elementi jednog veći od svih elemenata drugog i vraća
+						jedno stablo spojeno od ta dva stabla</li>
+						<li>Unija – Vraća uniju dva stabla</li>
+					</ul>
+					<p>Za više informacija oko projekta mozete otići na dokumentaciju klikom <a href="https://github.com/HamzaKol/Binary-Search-Tree/blob/main/projekat2Dokumentacija.pdf" target="_blank">ovdje!</a></p>
+				</div>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<div>
+			<p><a class="link1" href="#Header">Vrati se na pocetak</a> 2023 &copy</p>
+		</div>
+		<div>
+			<p><a class="link1" target="_blank" href="https://github.com/HamzaKol"> <img src="./Slike/github.png" id="github" class="ikonica"> Github </a></p>
+		</div>
+		<div>
+			<p><a class="link1" target="_blank" href="https://www.linkedin.com/in/hamza-kolašinac-989819243/"> <img src="./Slike/linkedin.png" id="linkedin" class="ikonica"> LinkedIn </a></p>
+		</div>
+		<div>
+			<p><a class="link1" target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwis8uCXu7yCAxUl0gIHHffNBaMQFnoECAsQAQ&url=https%3A%2F%2Ftwitter.com%2Fhamza_kolasinac&usg=AOvVaw0avf-qG1UjiOadNtXqu4le&opi=89978449"> <img src="./Slike/twitter.png" id="twitter" class="ikonica"> Twitter </a></p>
+		</div>
+		
+	</footer>
+</body>
+</html>
